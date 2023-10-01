@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CUSTOM PROPS */
+:root {
+    --text-color: #000;
+}
+
+/* GENERAL */
+html {
+height: 100%;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+}
+
+*:focus {
+outline: 2px dashed var(--text-color);
+outline-offset: 3px;
+}
+
+body {
+height: 100%;
+background-color: #fff;
+font-family: "Arial", sans-serif;
+font-size: 16px;
+line-height: 1.5;
+color: var(--text-color);
+margin: 0;
+}
+
+/* CONTAINER */
+.container {
+width: 100%;
+max-width: 1150px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+/* VISUALLY HIDDEN */
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
+#root {
+height: 100%;
+display: flex;
+flex-direction: column;
+}
+
+.main-content {
+flex-grow: 1;
+}
+
+
+
+
+
+
+/* Testimonials */
+.testimonials {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    background-color: #004047;
+    background-image: url('../public/Testimonials/reviews-bg-left.png'), url('../public/Testimonials/reviews-bg-right.png');
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+}
+
+.testimonials-title {
+    margin-top: 0;
+    margin-bottom: 56px;
+    width: 932px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Livvic';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #fff;
+}
+
+.testimonials-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.testimonials-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.testimonials-item {
+    background-image: url('../public/Testimonials/quotes.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.testimonials-w {
+    margin-top: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonials-w-desc {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+}
+
+.testimonials-w-name {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #79C8C7;
+}
+
+.testimonials-w-job {
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-family: 'Livvic';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.testimonials-w-img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
